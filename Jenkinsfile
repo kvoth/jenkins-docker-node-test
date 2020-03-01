@@ -9,6 +9,8 @@ node {
     stage('Test') {
         
         echo 'Testing..'
+
+        app = docker.build("kvoth/jenkins-docker-node-test")        
      }
     stage('Deploy') {
         
