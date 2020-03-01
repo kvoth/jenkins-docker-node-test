@@ -7,13 +7,11 @@ node {
         checkout scm
     }
     stage('Test') {
-        steps {
-            echo 'Testing..'
-        }
-    }
+        
+        echo 'Testing..'
+     }
     stage('Deploy') {
-        steps {
-            echo 'Deploying....'
-        }
+        
+        echo 'Deploying....'
     }    
 }
