@@ -2,10 +2,10 @@ pipeline {
     agent none
  
     stages {
-        stage('Docker node test') {
+        stage('Docker test') {
             agent {
                 dockerfile {
-                filename "back-end/dockerfiles/ci/Dockerfile"
+                filename "Dockerfile"
                 }
             }
             steps {
